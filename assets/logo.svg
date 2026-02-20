@@ -1,62 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" fill="none">
-  <!-- Background -->
-  <rect width="680" height="280" rx="16" fill="#0d1117"/>
-  
-  <!-- Grid pattern (subtle tech feel) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" fill="none">
+  <rect width="680" height="200" rx="16" fill="#0d1117"/>
   <defs>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#161b22" stroke-width="1"/>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0L0 0 0 40" fill="none" stroke="#161b22" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="680" height="280" fill="url(#grid)"/>
-  
-  <!-- Left icon: invoice/receipt shape (centered) -->
-  <g transform="translate(80, 40)">
-    <!-- Receipt body -->
-    <path d="M0 10 Q0 0 10 0 L70 0 Q80 0 80 10 L80 170 L70 160 L60 170 L50 160 L40 170 L30 160 L20 170 L10 160 L0 170 Z" fill="#1a2332" stroke="#30a14e" stroke-width="2"/>
-    <!-- Lines on receipt -->
-    <line x1="16" y1="30" x2="64" y2="30" stroke="#30a14e" stroke-width="2" opacity="0.6"/>
-    <line x1="16" y1="50" x2="54" y2="50" stroke="#30a14e" stroke-width="2" opacity="0.4"/>
-    <line x1="16" y1="70" x2="58" y2="70" stroke="#30a14e" stroke-width="2" opacity="0.6"/>
-    <line x1="16" y1="90" x2="48" y2="90" stroke="#30a14e" stroke-width="2" opacity="0.4"/>
-    <!-- Checkmark -->
-    <path d="M50 105 L58 115 L72 95" stroke="#30a14e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    <!-- Amount -->
-    <text x="16" y="140" font-family="monospace" font-size="16" fill="#30a14e" font-weight="bold">¥100</text>
+  <rect width="680" height="200" fill="url(#g)"/>
+  <g transform="translate(40,40)">
+    <rect width="120" height="120" rx="16" fill="#1a2332" stroke="#30a14e" stroke-width="2.5"/>
+    <path d="M22 12 Q22 8 26 8 L72 8 Q76 8 76 12 L76 100 L70 94 L64 100 L58 94 L52 100 L46 94 L40 100 L34 94 L28 100 L22 94Z" fill="#0d1117" stroke="#30a14e" stroke-width="1.5"/>
+    <line x1="32" y1="26" x2="66" y2="26" stroke="#30a14e" stroke-width="1.5" opacity="0.6"/>
+    <line x1="32" y1="38" x2="60" y2="38" stroke="#30a14e" stroke-width="1.5" opacity="0.4"/>
+    <line x1="32" y1="50" x2="64" y2="50" stroke="#30a14e" stroke-width="1.5" opacity="0.6"/>
+    <text x="34" y="72" font-family="monospace" font-size="12" fill="#30a14e" font-weight="700" opacity="0.8">&#xA5;100</text>
+    <path d="M82 30 L100 60 M82 60 L100 60 M82 90 L100 60" stroke="#484f58" stroke-width="1.5" opacity="0.5"/>
+    <polygon points="100,56 100,64 108,60" fill="#30a14e" opacity="0.7"/>
   </g>
-  
-  <!-- Arrow: merge symbol -->
-  <g transform="translate(175, 95)">
-    <!-- Multiple small receipts converging -->
-    <rect x="0" y="0" width="18" height="24" rx="2" fill="none" stroke="#484f58" stroke-width="1.5" opacity="0.5"/>
-    <rect x="0" y="30" width="18" height="24" rx="2" fill="none" stroke="#484f58" stroke-width="1.5" opacity="0.5"/>
-    <rect x="0" y="60" width="18" height="24" rx="2" fill="none" stroke="#484f58" stroke-width="1.5" opacity="0.5"/>
-    <!-- Arrows -->
-    <path d="M22 12 L38 42" stroke="#484f58" stroke-width="1.5" opacity="0.6"/>
-    <path d="M22 42 L38 42" stroke="#484f58" stroke-width="1.5" opacity="0.6"/>
-    <path d="M22 72 L38 42" stroke="#484f58" stroke-width="1.5" opacity="0.6"/>
-    <polygon points="38,38 38,46 46,42" fill="#30a14e" opacity="0.8"/>
-  </g>
-  
-  <!-- Title text (centered in remaining space) -->
-  <text x="250" y="100" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="52" fill="#e6edf3" font-weight="700" letter-spacing="-1">JD Invoice</text>
-  <text x="250" y="155" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="52" fill="#30a14e" font-weight="700" letter-spacing="-1">Auto-Merge</text>
-  
-  <!-- Subtitle -->
-  <text x="252" y="190" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="16" fill="#7d8590">Frida + CDP + Vue.js Internals</text>
-  
-  <!-- Tech tags -->
-  <g transform="translate(252, 210)">
-    <rect x="0" y="0" width="72" height="24" rx="12" fill="#1a2332" stroke="#30a14e" stroke-width="1"/>
-    <text x="36" y="16" font-family="monospace" font-size="11" fill="#30a14e" text-anchor="middle">Frida</text>
-    
-    <rect x="82" y="0" width="56" height="24" rx="12" fill="#1a2332" stroke="#1f6feb" stroke-width="1"/>
-    <text x="110" y="16" font-family="monospace" font-size="11" fill="#58a6ff" text-anchor="middle">CDP</text>
-    
-    <rect x="148" y="0" width="72" height="24" rx="12" fill="#1a2332" stroke="#3fb950" stroke-width="1"/>
-    <text x="184" y="16" font-family="monospace" font-size="11" fill="#3fb950" text-anchor="middle">Vue.js</text>
-    
-    <rect x="230" y="0" width="80" height="24" rx="12" fill="#1a2332" stroke="#f0883e" stroke-width="1"/>
-    <text x="270" y="16" font-family="monospace" font-size="11" fill="#f0883e" text-anchor="middle">Python</text>
+  <text x="195" y="72" font-family="'Segoe UI',system-ui,sans-serif" font-size="46" fill="#e6edf3" font-weight="700" letter-spacing="-1">JD Invoice</text>
+  <text x="195" y="118" font-family="'Segoe UI',system-ui,sans-serif" font-size="46" fill="#30a14e" font-weight="700" letter-spacing="-1">Auto-Merge</text>
+  <text x="197" y="148" font-family="'Segoe UI',system-ui,sans-serif" font-size="14" fill="#7d8590">Frida + CDP + Vue.js Internals</text>
+  <g transform="translate(197,162)">
+    <rect width="62" height="22" rx="11" fill="#1a2332" stroke="#30a14e" stroke-width="1"/>
+    <text x="31" y="15" font-family="monospace" font-size="10" fill="#30a14e" text-anchor="middle">Frida</text>
+    <rect x="72" width="52" height="22" rx="11" fill="#1a2332" stroke="#58a6ff" stroke-width="1"/>
+    <text x="98" y="15" font-family="monospace" font-size="10" fill="#58a6ff" text-anchor="middle">CDP</text>
+    <rect x="134" width="66" height="22" rx="11" fill="#1a2332" stroke="#3fb950" stroke-width="1"/>
+    <text x="167" y="15" font-family="monospace" font-size="10" fill="#3fb950" text-anchor="middle">Vue.js</text>
+    <rect x="210" width="66" height="22" rx="11" fill="#1a2332" stroke="#f0883e" stroke-width="1"/>
+    <text x="243" y="15" font-family="monospace" font-size="10" fill="#f0883e" text-anchor="middle">Python</text>
   </g>
 </svg>
