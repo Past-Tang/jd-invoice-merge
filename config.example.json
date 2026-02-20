@@ -1,0 +1,27 @@
+{
+  "invoice": {
+    "ivc_title": "你的姓名",
+    "ivc_title_type": 4,
+    "ivc_type": 3,
+    "ivc_content": 1,
+    "change_reason": "抬头有误"
+  },
+  "merge": {
+    "target_amount": 100.0,
+    "max_orders_per_invoice": 10
+  },
+  "execution": {
+    "delay_min": 4,
+    "delay_max": 9,
+    "retry_limit": 2,
+    "cdp_port": 9444
+  },
+  "paths": {
+    "data_dir": "data",
+    "all_orders_file": "data/all_orders.json",
+    "all_tab_orders_file": "data/all_tab_orders.json",
+    "merge_plan_file": "data/merge_plan.json",
+    "merge_progress_file": "data/merge_progress.json",
+    "log_file": "data/batch_merge.log"
+  }
+}

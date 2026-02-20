@@ -1,0 +1,37 @@
+# Data files (contain personal order info)
+data/*.json
+data/*.log
+data/*.csv
+
+# Config with personal info
+config.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Old files from development
+.env
+*.bak
